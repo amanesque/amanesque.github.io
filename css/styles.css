@@ -1,0 +1,25 @@
+h1 {
+    text-align: center;
+    color: coral;
+}
+
+p {
+    text-align: center;
+    color: teal;
+}
+
+.center {
+    text-align: center;
+}
+
+.custom {
+    display: inline-block;
+    font-size: medium;
+
+	margin: 3px auto;
+	padding: 2px 7px;
+	border-radius: 50px;
+	color: #007bff;
+	border: 2px solid #007bff;
+	background: 0 0
+}
