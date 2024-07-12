@@ -1,25 +1,74 @@
-h1 {
-    text-align: center;
-    color: coral;
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --brunswick-green: #1B5448;
+    --mint-green: #17B890;
+    --jungle-green: #14A380;
+    --white: #EDF2F4;
+    --charcoal: #444452;
 }
 
-p {
-    text-align: center;
-    color: teal;
+html {
+    box-sizing: border-box
 }
 
-.center {
-    text-align: center;
+*,
+:after,
+:before {
+    box-sizing: inherit
 }
 
-.custom {
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white);
+    color: var(--charcoal);
+    line-height: 1.5;
+    width: 100%
+}
+
+::selection {
+    background: var(--mint-green)
+}
+
+.hero {
+    display: flex;
+    padding: 120px 120px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: space-evenly;
+    max-width: 1440px;
+    margin: 0 auto
+}
+
+.hero-hello,
+.hero-tagline {
+    font-size: 2.5rem;
+    font-weight: 300;
+    font-family: 'Raleway'
+}
+
+.hero-tagline {
+    max-width: 700px;
+}
+
+.hero-tagline .name {
+    font-weight: 700;
+}
+
+.hero-contact {
+    font-size: 1.3rem;
+    font-weight: 400;
+    font-family: 'Raleway'
+}
+
+.annotated-link {
+    font-size: 1.3rem;
+    font-family: 'Cascadia Code';
+    font-weight: 500;
+    color: var(--jungle-green);
     display: inline-block;
-    font-size: medium;
-
-	margin: 3px auto;
-	padding: 2px 7px;
-	border-radius: 50px;
-	color: #007bff;
-	border: 2px solid #007bff;
-	background: 0 0
+    padding: 2px 3px;
+    text-decoration: none;
 }
