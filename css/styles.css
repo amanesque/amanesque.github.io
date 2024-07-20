@@ -51,9 +51,54 @@ a {
     color: var(--jungle-green);
 }
 
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0
+}
+
 ::selection {
     background: var(--mint-green);
     color: var(--white)
+}
+
+.section {
+	display: flex;
+	justify-content: center;
+	padding: 100px 170px;
+    
+}
+
+.section-title {
+	flex-shrink: 0;
+	width: 200px;
+	margin-right: 70px;
+	color: var(--jungle-green);
+	text-transform: uppercase;
+	text-align: right;
+	font-weight: 700;
+    font-size: 2rem;
+    font-family: 'Cascadia Code';
+	letter-spacing: 3px
+}
+
+.section-content {
+	font-weight: 300;
+	font-size: 1.2rem;
+    font-family: 'Raleway';
+	width: 100%;
+	max-width: 650px
+}
+
+.section-content p {
+	margin-top: 0;
+	margin-bottom: 25px
+}
+
+.section-content .underline-link {
+	position: relative;
+	display: inline-blockl;
+    color: var(--charcoal);
 }
 
 .hero {
@@ -94,41 +139,18 @@ a {
     padding: 2px 3px;
 }
 
-.about {
+.skills {
 	display: flex;
-	justify-content: center;
-	padding: 100px 170px;
-    
+	justify-content: space-between
 }
 
-.about-title {
-	flex-shrink: 0;
-	width: 200px;
-	margin-right: 70px;
-	color: var(--jungle-green);
-	text-transform: uppercase;
-	text-align: right;
+.skills .skills-category-label {
 	font-weight: 700;
-    font-size: 2rem;
-    font-family: 'Cascadia Code';
-	letter-spacing: 3px
+	color: var(--brunswick-green);
+	text-transform: uppercase
 }
 
-.about-content {
-	font-weight: 300;
-	font-size: 1.2rem;
-    font-family: 'Raleway';
-	width: 100%;
-	max-width: 650px
-}
-
-.about-content p {
-	margin-top: 0;
-	margin-bottom: 25px
-}
-
-.about-content .underline-link {
-	position: relative;
-	display: inline-blockl;
-    color: var(--charcoal);
+.skills .skills-category-item {
+	margin: 3px 0;
+	font-size: .9rem
 }
