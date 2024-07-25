@@ -4,7 +4,7 @@
     --brunswick-green: #1B5448;
     --mint-green: #17B890;
     --jungle-green: #14A380;
-    --white: #EDF2F4;
+    --white: #FFFFFF;
     --charcoal: #444452;
 }
 
@@ -65,7 +65,7 @@ ul {
 .section {
 	display: flex;
 	justify-content: center;
-	padding: 100px 170px;
+	padding: 120px 170px;
     
 }
 
@@ -87,7 +87,7 @@ ul {
 	font-size: 1.2rem;
     font-family: 'Raleway';
 	width: 100%;
-	max-width: 650px
+	max-width: 1200px
 }
 
 .section-content p {
@@ -141,7 +141,8 @@ ul {
 
 .skills {
 	display: flex;
-	justify-content: space-between
+	justify-content:space-between;
+    width: 650px;
 }
 
 .skills .skills-category-label {
@@ -153,4 +154,70 @@ ul {
 .skills .skills-category-item {
 	margin: 3px 0;
 	font-size: .9rem
+}
+
+.skills-category-item::before {
+    content: "➧";
+    margin-right: 4px;
+    left: 0px;
+    color: var(--mint-green);
+    line-height: 12px;
+}
+
+.featured-project {
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 48px;
+}
+
+.project-image img {
+    width: fit-content;
+    height: fit-content;
+    object-fit: cover
+}
+
+.project-content {
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+}
+
+.project-title {
+    align-self: flex-end;
+    color: var(--mint-green);
+    font-size: 32px;
+    font-weight: 800;
+    margin: 0;
+}
+
+.project-title:after {
+    position: relative;
+    bottom: 2px;
+    margin-left: 15px;
+    content: '';
+    background: url(../images/external-link.svg) no-repeat center;
+    background-size: 100%;
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    vertical-align: middle
+}
+
+.project-description {
+    text-align: end;
+    color: var(--charcoal);
+    margin: 20px 0;
+}
+
+.project-tech {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.project-tech-item {
+    margin: 10px;
+    font-size: .75rem;
+    font-weight: 700;
 }

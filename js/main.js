@@ -4,15 +4,21 @@ document.addEventListener("DOMContentLoaded", function () {
   const names = document.querySelectorAll('.highlight-text');
   const boxLinks = document.querySelectorAll('.boxed-link');
   const underlineLinks = document.querySelectorAll('.underline-link');
-  const aboutContent = document.querySelectorAll('.bracket-enclosed');
+  const bracketedContent = document.querySelectorAll('.bracket-enclosed');
+  const boxedContent = document.querySelectorAll('.boxed');
 
   names.forEach(name => {
-    const nameAnnotation = annotate(name, { type: 'highlight', color: '#17B89080' });
+    const nameAnnotation = annotate(name, { type: 'highlight', color: '#17B89080'});
     nameAnnotation.show();
   });
 
-  aboutContent.forEach(about => {
-    const nameAnnotation = annotate(about, { type: 'bracket', brackets:['left', 'right'], padding: [1, 10, -10, 10], color: '#17B89080', strokeWidth: 5 });
+  bracketedContent.forEach(content => {
+    const nameAnnotation = annotate(content, { type: 'bracket', brackets:['left', 'right'], padding: [8, 8, 4, 8], color: '#17B89080', strokeWidth: 5 });
+    nameAnnotation.show();
+  });
+
+  boxedContent.forEach(content => {
+    const nameAnnotation = annotate(content, { type: 'box', color: '#17B89080'});
     nameAnnotation.show();
   });
 
