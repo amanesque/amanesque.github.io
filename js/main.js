@@ -1,3 +1,4 @@
+// For Rough Notations
 document.addEventListener("DOMContentLoaded", function () {
   const { annotate } = window.RoughNotation;
 
@@ -8,22 +9,22 @@ document.addEventListener("DOMContentLoaded", function () {
   const boxedContent = document.querySelectorAll('.boxed');
 
   names.forEach(name => {
-    const nameAnnotation = annotate(name, { type: 'highlight', color: '#17B89080'});
+    const nameAnnotation = annotate(name, { type: 'highlight', color: '#4392F180' });
     nameAnnotation.show();
   });
 
   bracketedContent.forEach(content => {
-    const nameAnnotation = annotate(content, { type: 'bracket', brackets:['left', 'right'], padding: [8, 8, 4, 8], color: '#17B89080', strokeWidth: 5 });
+    const nameAnnotation = annotate(content, { type: 'bracket', brackets:['left', 'right'], padding: [8, 8, 4, 8], color: '#4392F180', strokeWidth: 5 });
     nameAnnotation.show();
   });
 
   boxedContent.forEach(content => {
-    const nameAnnotation = annotate(content, { type: 'box', color: '#17B89080'});
+    const nameAnnotation = annotate(content, { type: 'box', padding: [6, 14, 6, 8], color: '#4392F180', strokeWidth: 3, animationDuration: 1200 });
     nameAnnotation.show();
   });
 
   boxLinks.forEach(link => {
-    const annotation = annotate(link, { type: 'box', padding: [1, 1], color: '#14A380', animationDuration: 600 });
+    const annotation = annotate(link, { type: 'box', padding: [1, 1], color: '#4392F1', animationDuration: 600 });
 
     link.addEventListener('mouseenter', () => {
       annotation.show();
@@ -35,7 +36,7 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   underlineLinks.forEach(link => {
-    const annotation = annotate(link, { type: 'underline', padding: [1, 0], color: '#14A380', animationDuration: 400 });
+    const annotation = annotate(link, { type: 'underline', padding: [1, 0], color: '#4392F1', animationDuration: 400 });
 
     link.addEventListener('mouseenter', () => {
       annotation.show();
