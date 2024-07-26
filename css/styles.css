@@ -48,7 +48,7 @@ html {
 a {
 	text-decoration: none;
 	font-weight: 700;
-    color: var(--jungle-green);
+    color: var(--mint-green);
 }
 
 ul {
@@ -220,4 +220,32 @@ ul {
     margin: 10px;
     font-size: .75rem;
     font-weight: 700;
+}
+
+footer {
+    padding: 50px 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center
+}
+
+.footer-copyright {
+    font-weight: 700;
+    width: 200px
+}
+
+.footer-links a {
+    position: relative;
+    display: inline-block;
+    color: var(--charcoal);
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0 15px;
+    outline: 0
+}
+
+.footer-links .link-item {
+    font-size: 1.2rem;
+    display: inline;
+    letter-spacing: 2px
 }
