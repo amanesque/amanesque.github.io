@@ -174,9 +174,9 @@ ul {
 }
 
 .project-image img {
-    width: auto;
-    height: auto;
-    object-fit: cover;
+    width: 600px;
+    height: 400px;
+    object-fit:scale-down
 }
 
 .project-content {
@@ -353,6 +353,7 @@ footer {
 
     .project-image img {
         width: 99%;
+        height: 99%;
     }
 
     footer {
